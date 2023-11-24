@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: url(img/tlo.jpg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1000;
+    display: flex;
+    height: 3.1vw;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+
+    header svg {
+        fill: #ffffff;
+        height: 3vw;
+        max-width: 90px;
+        margin-right: 10px;
+    }
+
+    header .logo {
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 2.5vw;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+        header nav ul li {
+            list-style: none;
+            position: relative;
+        }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                display: block;
+                padding: 0 20px;
+                transition: 0.5s;
+                font-size: 1.25vw;
+            }
+
+.container {
+    padding: 20px;
+}
+
+.banner {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+    .banner #banner_content,
+    .banner .menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        list-style: none;
+    }
+
+.line {
+    width: 40%;
+    height: 2px;
+    background-color: #fff;
+    margin: 1% 0 1% 30%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-content {
+    background-color: rgba(50, 50, 50, 0.95);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.card {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    margin-left: 0;
+}
+
+    .card .pic {
+        flex-shrink: 0;
+        flex-basis: 40%;
+        position: relative;
+    }
+
+.pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+th,
+td {
+    padding: 10px 20px 20px 30px;
+}
+
+.card .pic .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+    overflow: hidden;
+    transform: scale(0);
+}
+
+.card .pic:hover .overlay {
+    transform: scale(1);
+}
+
+.card .pic .overlay .exif_table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.desc {
+    margin: 30px;
+}
+
+.card p {
+    color: white;
+    display: inline;
+}
+
+.card h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.to_the_top {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+    .to_the_top a:hover {
+        color: red;
+    }
+
+    .to_the_top a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+.banner .menu {
+    display: none;
+}
+
+a:visited,
+a:link {
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .card,
+    .card2 {
+        flex-direction: column;
+    }
+
+    .desc {
+        margin-left: 0;
+    }
+
+    header nav ul li a {
+        font-size: 3vw;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header svg {
+        height: 5vw;
+    }
+
+    header {
+        height: 0;
+        display: none;
+    }
+
+    .banner {
+        height: 200px;
+        margin-top: 0;
+        padding-bottom: 50px;
+    }
+
+        .banner .menu {
+            display: flex;
+            position: relative;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            float: left;
+        }
+
+        .banner #banner_content {
+            position: relative;
+        }
+
+        .banner ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: rgba(50, 50, 50, 0.95);
+            border-radius: 16px;
+        }
+
+            .banner ul li {
+                list-style: none;
+                position: relative;
+            }
+
+                .banner ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 500;
+                    display: block;
+                    padding: 0 20px;
+                    transition: 0.5s;
+                }
+}
