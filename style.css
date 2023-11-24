@@ -171,6 +171,8 @@ td {
 
 .desc {
     margin: 30px;
+    text-align:left;
+    color:white;
 }
 
 .card p {
