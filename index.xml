@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fotografia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd">
+	<autor>
+		<imie>Tomasz</imie>
+		<nazwisko>Nazar</nazwisko>
+		<numer_indeksu>s197613</numer_indeksu>
+		<kierunek>ACiR</kierunek>
+		<grupa>3</grupa>
+	</autor>
+	<opis>
+		Witaj na mojej stronie internetowej, poświęconej pasji, która pozwala mi uchwycić piękno świata w kadrze - fotografii.
+	</opis>
+	<zdjecia>
+		<zdjecie pozycja_zdjecia="left">
+			<tytul>Jak to się wszystko zaczęło</tytul>
+			<historiaizasady>
+				Wszystko zaczęło się od magicznych chwil spędzonych z tatą, gdy patrzyłem na świat przez obiektyw jego aparatu.
+				To był mój pierwszy kontakt z fotografią, a każdy moment spędzony przy jego boku wypełniał się emocjami i niezapomnianymi wspomnieniami.
+				Fascynacja tym, jak jedno kliknięcie migawki może zatrzymać czas i uwiecznić emocje, zaczęła się we mnie rozwijać. W miarę jak rozwijałem się, tak też rosła moja ciekawość i pragnienie nauki sztuki fotografii.
+				Tata stał się moim pierwszym nauczycielem, dzieląc się ze mną tajnikami kompozycji, światła i kadrowania. Był dla mnie nie tylko mentorem, ale również inspiracją do poszukiwania własnego spojrzenia na świat.
+				Choć minęło wiele lat od tamtych pierwszych kadrów, wciąż korzystam z aparatu, którym tata podzielił się ze mną. To dla mnie nie tylko narzędzie do rejestrowania chwil, ale także dziedzictwo, które przekazał mi w formie pasji i umiejętności.
+				Dzięki jego wsparciu i mojej nieustannej fascynacji fotografią, każdy nowy dzień staje się okazją do odkrywania nowych perspektyw i chwytania ulotnych momentów.
+			</historiaizasady>
+			<obrazek zrodlo="img/_DSC8209.jpg">zdjęcie z czarnogóry</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>NIKON D700</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>f/5</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>1/1250s</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>200</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>28mm</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link source="https://maps.app.goo.gl/UgkWAgCqLUiPV2yZA">Czarnogóra</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="right">
+			<tytul>Parę słów o fotografii</tytul>
+			<historiaizasady>
+				Fotografia to sztuka zatrzymywania chwil i tworzenia trwałych wspomnień. Niezależnie od poziomu doświadczenia, zrozumienie kilku kluczowych zasad może znacząco poprawić jakość fotografii.
+				Światło odgrywa kluczową rolę – korzystaj z naturalnego światła, unikaj silnych cieni. Kompozycja i zasada trójpodziału nadają zdjęciom wyjątkowy charakter, a zmiana perspektywy dodaje oryginalności.
+				Znajomość ostrości, głębokości ostrości i ustawień aparatu pozwala kontrolować efekty w kadrze. Cierpliwość to atut – czekaj na odpowiedni moment.Obróbka zdjęć może podkreślić ich walory, ale zachowaj umiar. Pamiętaj, że te wskazówki to punkt wyjścia. Fotografia to sztuka eksperymentowania i odkrywania własnego stylu. Baw się procesem!
+			</historiaizasady>
+			<obrazek zrodlo="img/_DSC9042-2.jpg">zdjęcie z gór</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>NIKON D700</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>f/5.6</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>1/1640s</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>200</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>75mm</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link source="https://maps.app.goo.gl/iDoh6WXpKijy817LA">Śnieżka</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="left">
+			<tytul>Zasada trójpodziału</tytul>
+			<historiaizasady>
+				Zasada trójpodziału, znana także jako reguła trójpodziału, to jedna z fundamentalnych zasad kompozycji w fotografii. Ta zasada mówi o tym, że kadry można efektywnie podzielić na dziewięć równych części, stosując dwie poziome i dwie pionowe linie, tak jak w siatce o trzech kolumnach i trzech rzędach.
+				Punkty przecięcia tych linii są nazywane "punktem złotym", a umieszczenie ważnych elementów kadru w pobliżu tych punktów często nadaje zdjęciu lepszą równowagę i interesującą dynamikę. Na przykład umieszczenie głównego obiektu fotografii w jednym z punktów złotych zamiast centralnie może sprawić, że zdjęcie stanie się bardziej atrakcyjne wizualnie.
+				Zasada trójpodziału pomaga unikać statyczności w kompozycji, dodając dynamikę i interesujący układ elementów w kadrze. Fotografowie często korzystają z tej zasady, aby skomponować zdjęcia w sposób, który przyciąga uwagę i tworzy estetycznie przyjemne kadry. To narzędzie kompozycyjne jest jednak elastyczne, a jego zastosowanie zależy od indywidualnych preferencji artystycznych. Eksperymentowanie z zasadą trójpodziału może prowadzić do odkrycia unikalnych i fascynujących sposobów komponowania zdjęć.
+			</historiaizasady>
+			<obrazek zrodlo="img/trojpodzial.png">Zasada trójpodziału</obrazek>
+
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="right">
+			<tytul>Ekspozycja</tytul>
+			<historiaizasady>
+				Ekspozycja w fotografii odnosi się do ilości światła, które padają na matrycę (lub film) aparatu fotograficznego podczas robienia zdjęcia. Prawidłowa ekspozycja jest kluczowa, aby uzyskać dobrze naświetlone i wyważone fotografie.
+				W skrócie, ekspozycja zależy od trzech głównych elementów:
+				Czas naświetlania (czas migawki): To określa, jak długo otwarta jest migawka aparatu, pozwalając światłu na dostanie się do matrycy. Krótki czas naświetlania (szybka migawka) nadaje się do zatrzymywania ruchu, podczas gdy długi czas (wolna migawka) może być wykorzystywany do uchwycenia ruchu lub dostarczenia więcej światła w warunkach słabego oświetlenia.
+				Przysłona (apertura): Przysłona kontroluje ilość światła, które przechodzi przez obiektyw do matrycy. Niskie wartości przysłony (duże otwory, np. f/1.8) pozwalają na dużo światła i są przydatne w warunkach słabego oświetlenia, podczas gdy wysokie wartości przysłony (małe otwory, np. f/16) ograniczają ilość światła, ale zwiększają głębię ostrości.
+				Czułość ISO: Oznacza to, jak czuła jest matryca na światło. Niska wartość ISO (np. 100) jest odpowiednia w jasnych warunkach, podczas gdy wysoka wartość ISO (np. 1600 lub więcej) pozwala na fotografowanie w warunkach słabego oświetlenia, ale może wprowadzić szumy na zdjęciu.
+				Balansowanie tych trzech elementów pozwala osiągnąć właściwą ekspozycję. Zbyt mała ekspozycja (zbyt ciemne zdjęcie) to tzw. "przepalenie", natomiast zbyt duża ekspozycja (zbyt jasne zdjęcie) to "zaciemnienie". Zrozumienie ekspozycji pozwala fotografowi kontrolować efekty świetlne i ciemne, tworząc fotografie o pożądanej estetyce i atmosferze.
+			</historiaizasady>
+			<obrazek zrodlo="img/trojkat_ekspozycji.webp">Ekspozycja</obrazek>
+		</zdjecie>
+	</zdjecia>
+
+
+
+</fotografia>

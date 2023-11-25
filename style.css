@@ -27,6 +27,11 @@ header {
     align-items: center;
     transition: 0.6s;
 }
+    header .aparacik {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
     header svg {
         fill: #ffffff;
@@ -347,4 +352,14 @@ a:link {
                     padding: 0 20px;
                     transition: 0.5s;
                 }
+
+    .dropdown-content a {
+        font-size: 2vw;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-weight: 300;
+        word-wrap: break-word;
+    }
 }
