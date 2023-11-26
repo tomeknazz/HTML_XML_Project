@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="fotografia" type="fotografiaType"/>
+
+	<xs:simpleType name="shortStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="opisType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="130"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="longStringType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="kierunekType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="ACiR|IBM|INF|EiT"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="imieType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z][a-z]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="historiaizasadyType">
+		<xs:simpleContent>
+			<xs:extension base="longStringType">
+				<xs:attribute name="informacje" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="publiczne"/>
+							<xs:enumeration value="prywatne"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:attributeGroup name="obrazekAttributes">
+		<xs:attribute name="zrodlo" type="xs:string" use="required"/>
+		<xs:attribute name="exif" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="tak"/>
+					<xs:enumeration value="nie"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+
+	<xs:complexType name="fotografiaType">
+		<xs:sequence>
+			<xs:element name="autor" type="autorType" />
+			<xs:element name="opis" type="opisType" />
+			<xs:element name="zdjecia" type="zdjeciaType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:attribute name="adres" type="xs:anyURI"/>
+
+	<xs:complexType name="linkType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute ref="adres" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:element name="link" type="linkType"/>
+
+	<xs:complexType name="autorType">
+		<xs:sequence>
+			<xs:element name="imie" type="imieType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="nazwisko" type="imieType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="numer_indeksu" type="shortStringType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="kierunek" type="kierunekType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="grupa" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedByte">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="zyje" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="tak"/>
+					<xs:enumeration value="nie"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="zdjeciaType">
+		<xs:sequence>
+			<xs:element name="zdjecie" type="zdjecieType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="obrazekType">
+		<xs:simpleContent>
+			<xs:extension base="shortStringType">
+				<xs:attributeGroup ref="obrazekAttributes"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="daneexifType">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element name="rodzajdanych" type="shortStringType" maxOccurs="unbounded"/>
+			<xs:element name="wartosc" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element ref="link"/>
+						<xs:element name="text" type="xs:string"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="zdjecieType">
+		<xs:sequence>
+			<xs:element name="tytul" type="longStringType"/>
+			<xs:element name="historiaizasady" type="historiaizasadyType"/>
+			<xs:element name="obrazek" type="obrazekType"/>
+			<xs:choice minOccurs="1" maxOccurs="1">
+				<xs:element name="daneexif" type="daneexifType"/>
+				<xs:element ref="link" />
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute name="pozycja_zdjecia" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="left"/>
+					<xs:enumeration value="right"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+</xs:schema>

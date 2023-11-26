@@ -215,9 +215,10 @@ td {
     color: white;
 }
 
-.card p {
+.card p, #ekspozycja {
     color: white;
     display: inline;
+    font-size: 1.25em;
 }
 
 .card h1 {
