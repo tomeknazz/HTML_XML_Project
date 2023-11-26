@@ -11,6 +11,8 @@ body {
     background: url(img/tlo.jpg) center no-repeat;
     background-size: cover;
     z-index: -1;
+    height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -144,9 +146,6 @@ form{
     text-align:left;
 }
 
-form div + div {
-    margin-top: 1em;
-}
 
 label {
     display: inline;
@@ -156,9 +155,11 @@ label {
 
 input, textarea {
     font: 1em sans-serif;
-   
+    padding: 0.5em;
     box-sizing: border-box;
     border: 1px solid #999;
+    border-radius: 20px;
+    resize:none;
 }
 
 input:focus, textarea:focus {
@@ -196,6 +197,7 @@ footer {
     padding: 10px;
     color: white;
     text-align: center;
+
 }
 
 
