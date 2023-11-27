@@ -1,0 +1,28 @@
+<!ENTITY % inf "informacje (publiczne | prywatne) #REQUIRED">
+<!ENTITY % poz "pozycja_zdjecia (left | right) #REQUIRED">
+<!ELEMENT fotografia (autor, opis, zdjecia)>
+<!ELEMENT autor (imie, nazwisko, numer_indeksu, kierunek, grupa)>
+<!ELEMENT opis (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT numer_indeksu (#PCDATA)>
+<!ELEMENT kierunek (#PCDATA)>
+<!ELEMENT grupa (#PCDATA)>
+<!ELEMENT zdjecia (zdjecie+)>
+<!ELEMENT zdjecie (tytul, historiaizasady, obrazek, (daneexif | link))>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT historiaizasady (#PCDATA)>
+<!ELEMENT obrazek (#PCDATA)>
+<!ELEMENT daneexif ((rodzajdanych, wartosc)+)>
+<!ELEMENT rodzajdanych (#PCDATA)>
+<!ELEMENT wartosc (text | link)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST autor zyje (tak | nie) "tak">
+<!ATTLIST obrazek zrodlo CDATA #REQUIRED>
+<!ATTLIST obrazek exif (tak | nie) #REQUIRED>
+<!ATTLIST link adres CDATA #REQUIRED>
+<!ATTLIST zdjecie %poz;>
+<!ATTLIST fotografia xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance">
+<!ATTLIST fotografia xsi:noNamespaceSchemaLocation CDATA #FIXED "index.xsd">
+<!ATTLIST historiaizasady %inf; >
