@@ -15,14 +15,11 @@ body {
     overflow: hidden;
 }
 
-
 header .aparacik {
     align-items: center;
     justify-content: center;
     display: flex;
 }
-
-
 
 header {
     background: rgba(0,0,0,0.7);
@@ -41,10 +38,10 @@ header {
 
     header svg {
         fill: #ffffff;
-        height: 3vw; /* Adjust the value based on your design */
+        height: 3vw;
         width: auto;
-        max-width: 90px; /* Optional: Set a maximum width if needed */
-        margin-right: 10px; /* Adjust as needed */
+        max-width: 90px;
+        margin-right: 10px;
     }
 
     header .logo {
@@ -85,10 +82,9 @@ header {
 
 .banner {
     position: relative;
-    height: 200px; /* Set your desired height */
-
+    height: 200px;
     background-size: cover;
-    margin-top: 80px; /* Adjust this value based on your header height */
+    margin-top: 80px;
 }
 
     .banner #banner_content, .banner .menu {
@@ -137,20 +133,18 @@ header {
     display: block;
 }
 
-form{
+form {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
-    text-align:left;
+    text-align: left;
 }
-
 
 label {
     display: inline;
     width: 90px;
-  
 }
 
 input, textarea {
@@ -159,12 +153,12 @@ input, textarea {
     box-sizing: border-box;
     border: 1px solid #999;
     border-radius: 20px;
-    resize:none;
+    resize: none;
 }
 
-input:focus, textarea:focus {
-    border-color: #000;
-}
+    input:focus, textarea:focus {
+        border-color: #000;
+    }
 
 textarea {
     vertical-align: top;
@@ -179,7 +173,6 @@ textarea {
 button {
     margin-left: .5em;
 }
-
 
 footer {
     background-color: #333;
@@ -197,9 +190,7 @@ footer {
     padding: 10px;
     color: white;
     text-align: center;
-
 }
-
 
 .to_the_top {
     position: relative;
@@ -228,7 +219,6 @@ a:visited, a:link {
     color: white;
 }
 
-
 @keyframes moveInLeft {
     0% {
         opacity: 0;
@@ -245,27 +235,13 @@ a:visited, a:link {
     }
 }
 
-
 .aparacik {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
-
-
 @media (max-width: 900px) {
-    .card {
-        flex-direction: column;
-    }
-
-    .card2 {
-        flex-direction: column;
-    }
-
-    .desc {
-        margin-left: 0;
-    }
 
     header nav ul li a {
         font-size: 3vw;
@@ -329,6 +305,9 @@ a:visited, a:link {
                     transition: 0.5s;
                 }
 
+    .main-button {
+        font-size: 5vw;
+    }
 
     .dropdown-content a {
         font-size: 2vw;

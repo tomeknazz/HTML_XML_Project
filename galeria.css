@@ -13,7 +13,6 @@ body {
     z-index: -1;
 }
 
-
 header .aparacik {
     align-items: center;
     justify-content: center;
@@ -71,10 +70,10 @@ header {
 
     header svg {
         fill: #ffffff;
-        height: 3vw; /* Adjust the value based on your design */
+        height: 3vw;
         width: auto;
-        max-width: 90px; /* Optional: Set a maximum width if needed */
-        margin-right: 10px; /* Adjust as needed */
+        max-width: 90px;
+        margin-right: 10px;
     }
 
     header .logo {
@@ -115,10 +114,9 @@ header {
 
 .banner {
     position: relative;
-    height: 200px; /* Set your desired height */
-
+    height: 200px;
     background-size: cover;
-    margin-top: 80px; /* Adjust this value based on your header height */
+    margin-top: 80px;
 }
 
     .banner #banner_content, .banner .menu {
@@ -181,11 +179,10 @@ footer {
 
 th, td {
     padding-top: 0;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
-
 
 .card .pic .overlay {
     position: absolute;
@@ -218,7 +215,7 @@ th, td {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 1em;
+    font-size: 0.85em;
     text-transform: uppercase;
 }
 
@@ -291,19 +288,30 @@ a:visited, a:link {
     }
 }
 
-
 .aparacik {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
+@media (max-width:1200px) {
+    .card .pic .overlay .exif_table {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+}
 
 @media (max-width: 900px) {
     .card {
         flex-direction: column;
+        padding: 0;
     }
-
 
     header nav ul li a {
         font-size: 3vw;
@@ -366,6 +374,10 @@ a:visited, a:link {
                     padding: 0 20px;
                     transition: 0.5s;
                 }
+
+    .main-button {
+        font-size: 5vw;
+    }
 
     th, td {
         padding-top: 5px;

@@ -64,7 +64,9 @@
 	<xs:complexType name="fotografiaType">
 		<xs:sequence>
 			<xs:element name="autor" type="autorType" />
-			<xs:element name="opis" type="opisType" />
+			<xs:element name="opis" type="opisType" maxOccurs="unbounded"/>
+
+
 			<xs:element name="zdjecia" type="zdjeciaType"/>
 		</xs:sequence>
 	</xs:complexType>
@@ -122,7 +124,7 @@
 
 	<xs:complexType name="daneexifType">
 		<xs:sequence maxOccurs="unbounded">
-			<xs:element name="rodzajdanych" type="shortStringType" maxOccurs="unbounded"/>
+			<xs:element name="rodzajdanych" type="shortStringType"/>
 			<xs:element name="wartosc" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:choice>
@@ -136,8 +138,8 @@
 
 	<xs:complexType name="zdjecieType">
 		<xs:sequence>
-			<xs:element name="tytul" type="longStringType"/>
-			<xs:element name="historiaizasady" type="historiaizasadyType"/>
+			<xs:element name="tytul" type="longStringType" minOccurs="0"/>
+			<xs:element name="historiaizasady" type="historiaizasadyType" minOccurs="0"/>
 			<xs:element name="obrazek" type="obrazekType"/>
 			<xs:choice minOccurs="1" maxOccurs="1">
 				<xs:element name="daneexif" type="daneexifType"/>
@@ -147,11 +149,15 @@
 		<xs:attribute name="pozycja_zdjecia" use="required">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
+					<xs:enumeration value="glowna_left"/>
+					<xs:enumeration value="glowna_right"/>
 					<xs:enumeration value="left"/>
+					<xs:enumeration value="center"/>
 					<xs:enumeration value="right"/>
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
+		<xs:attribute name="kategoria" type="shortStringType" use="optional"/>
 	</xs:complexType>
 
 </xs:schema>

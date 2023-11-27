@@ -11,8 +11,14 @@
 	<opis>
 		Witaj na mojej stronie internetowej, poświęconej pasji, która pozwala mi uchwycić piękno świata w kadrze - fotografii.
 	</opis>
+	<opis>
+		Galeria - czyli moja praca w praktyce oraz historia moich podróży.
+	</opis>
+	<opis>
+		Strona kontaktowa
+	</opis>
 	<zdjecia>
-		<zdjecie pozycja_zdjecia="left">
+		<zdjecie pozycja_zdjecia="glowna_left">
 			<tytul>Jak to się wszystko zaczęło</tytul>
 			<historiaizasady informacje="prywatne">
 				Wszystko zaczęło się od magicznych chwil spędzonych z tatą, gdy patrzyłem na świat przez obiektyw jego aparatu.
@@ -50,7 +56,7 @@
 				</wartosc>
 			</daneexif>
 		</zdjecie>
-		<zdjecie pozycja_zdjecia="right">
+		<zdjecie pozycja_zdjecia="glowna_right">
 			<tytul>Parę słów o fotografii</tytul>
 			<historiaizasady informacje="publiczne">
 				Fotografia to sztuka zatrzymywania chwil i tworzenia trwałych wspomnień. Niezależnie od poziomu doświadczenia, zrozumienie kilku kluczowych zasad może znacząco poprawić jakość fotografii.
@@ -85,7 +91,7 @@
 				</wartosc>
 			</daneexif>
 		</zdjecie>
-		<zdjecie pozycja_zdjecia="left">
+		<zdjecie pozycja_zdjecia="glowna_left">
 			<tytul>Zasada trójpodziału</tytul>
 			<historiaizasady informacje="publiczne">
 				Zasada trójpodziału, znana także jako reguła trójpodziału, to jedna z fundamentalnych zasad kompozycji w fotografii. Ta zasada mówi o tym, że kadry można efektywnie podzielić na dziewięć równych części, stosując dwie poziome i dwie pionowe linie, tak jak w siatce o trzech kolumnach i trzech rzędach.
@@ -95,7 +101,7 @@
 			<obrazek zrodlo="img/trojpodzial.png" exif="nie">Zasada trójpodziału</obrazek>
 			<link adres="https://pl.wikipedia.org/wiki/Mocne_punkty_obrazu">Zasada trójpodziału</link>
 		</zdjecie>
-		<zdjecie pozycja_zdjecia="right">
+		<zdjecie pozycja_zdjecia="glowna_right">
 			<tytul>Ekspozycja</tytul>
 			<historiaizasady informacje="publiczne">
 				Ekspozycja w fotografii odnosi się do ilości światła, które padają na matrycę (lub film) aparatu fotograficznego podczas robienia zdjęcia. Prawidłowa ekspozycja jest kluczowa, aby uzyskać dobrze naświetlone i wyważone fotografie.
@@ -108,8 +114,469 @@
 			<obrazek zrodlo="img/trojkat_ekspozycji.webp" exif="nie">Ekspozycja</obrazek>
 			<link adres="https://pl.wikipedia.org/wiki/Ekspozycja_(fotografia)">Ekspozycja</link>
 		</zdjecie>
+		<zdjecie pozycja_zdjecia="left" kategoria="czarnogóra">
+			<obrazek zrodlo="img/_DSC8555.jpg" exif="tak">Stari Bar</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/6.3</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/640s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>28mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/hmxKQeAgURENfyat6">Stari Bar</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="center" kategoria="czarnogóra">
+			<obrazek zrodlo="img/_DSC8199.jpg" exif="tak">Budva - stare miasto</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/1000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>28mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/qJTGLq1PAMJPxDVPA">Budva</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="right" kategoria="czarnogóra">
+			<obrazek zrodlo="img/_DSC8200.jpg" exif="tak">Budva - marina</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/1000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>28mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/ojB2BLVQEbU1smWp6">Budva</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="left" kategoria="karkonosze">
+			<obrazek zrodlo="img/_DSC8901.jpg" exif="tak">Znak karnonoski park narodowy</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/320s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>75mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/7yVqxiVn6TphNNzv7">Szrenica</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="center" kategoria="karkonosze">
+			<obrazek zrodlo="img/_DSC8960.jpg" exif="tak">Schronisko pod Śnieżką</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/800s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>75mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/PckAn3Ux4ggktaoD7">Strzecha Akademicka</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="right" kategoria="karkonosze">
+			<obrazek zrodlo="img/_DSC8901.jpg" exif="tak">Poranna mgła</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/100s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>450</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>75mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/WGsSGQ8etjYfzzSs7">Szklarska Poręba</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="left" kategoria="sztokholm">
+			<obrazek zrodlo="img/_DSC8046.jpg" exif="tak">Mosiężna figurka</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/3.5</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/125s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>75mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/4Uj6LrW4P1PXgvdq6">Sztokholm</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="center" kategoria="sztokholm">
+			<obrazek zrodlo="img/_DSC8268-Pano.jpg" exif="tak">Nordiska Museet - panorama</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/6.3</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/1000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>60mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/fp6zQJZq1PwdHsw4A">Sztokholm</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="left" kategoria="malta">
+			<obrazek zrodlo="img/_DSC5913-Pano.jpg" exif="tak">Valetta</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/6.3</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/1600s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>55mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/neoaHH2saPY8hr9S7">Valetta</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="center" kategoria="malta">
+			<obrazek zrodlo="img/_DSC6216.jpg" exif="tak">Plaża</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/6.3</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/1000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>28mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/sa1kjiCHD2YB7HUWA">Malta</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="left" kategoria="paryż">
+			<obrazek zrodlo="img/_DSC5121.jpg" exif="tak">Moulin Rouge</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/2000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>46mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/sjDrqxd4KXpvUwAm7">Moulin Rouge</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="center" kategoria="paryż">
+			<obrazek zrodlo="img/_DSC5328.jpg" exif="tak">Ogrody w Wersalu</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/4.5</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/2000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>48mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/9V5vXAw1Sd76BJDVA">Pałac Wersalski</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="right" kategoria="paryż">
+			<obrazek zrodlo="img/_DSC5755.jpg" exif="tak">Widok na Wieżę Eiffla</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/1000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>62mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/N1xnxi8996haHTp3A">Łuk Triumfalny</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="left" kategoria="rzym">
+			<obrazek zrodlo="img/_DSC7471.jpg" exif="tak">Koloseum</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/800s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>28mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/sXGgmyj4SKzZz1fd6">Koloseum</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="center" kategoria="rzym">
+			<obrazek zrodlo="img/_DSC7471.jpg" exif="tak">Plac św. Piotra</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/4.5</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/4000s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>28mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/LuiwC95sAxzGvAQ47">Plac św. Piotra</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
+		<zdjecie pozycja_zdjecia="right" kategoria="rzym">
+			<obrazek zrodlo="img/_DSC7471.jpg" exif="tak">Plac Wenecki</obrazek>
+			<daneexif>
+				<rodzajdanych>Model</rodzajdanych>
+				<wartosc>
+					<text>NIKON D700</text>
+				</wartosc>
+				<rodzajdanych>Przysłona</rodzajdanych>
+				<wartosc>
+					<text>f/5.6</text>
+				</wartosc>
+				<rodzajdanych>Czas ekspozycji</rodzajdanych>
+				<wartosc>
+					<text>1/640s</text>
+				</wartosc>
+				<rodzajdanych>Czułość ISO</rodzajdanych>
+				<wartosc>
+					<text>200</text>
+				</wartosc>
+				<rodzajdanych>Ogniskowa</rodzajdanych>
+				<wartosc>
+					<text>75mm</text>
+				</wartosc>
+				<rodzajdanych>Miejsce zrobienia</rodzajdanych>
+				<wartosc>
+					<link adres="https://maps.app.goo.gl/fmr8qSqj2VZVCRv56">Plac Wenecki</link>
+				</wartosc>
+			</daneexif>
+		</zdjecie>
 	</zdjecia>
-
-
-
 </fotografia>
