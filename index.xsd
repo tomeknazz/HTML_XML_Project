@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
-	<xs:element name="fotografia" type="fotografiaType"/>
+
 
 	<xs:simpleType name="shortStringType">
 		<xs:restriction base="xs:string">
@@ -30,6 +30,14 @@
 
 	<xs:simpleType name="imieType">
 		<xs:restriction base="xs:string">
+			<xs:length value="6"/>
+			<xs:pattern value="[A-Z][a-z]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="nazwiskoType">
+		<xs:restriction base="xs:string">
+			<xs:length value="5"/>
 			<xs:pattern value="[A-Z][a-z]+"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -49,29 +57,13 @@
 		</xs:simpleContent>
 	</xs:complexType>
 
-	<xs:attributeGroup name="obrazekAttributes">
-		<xs:attribute name="zrodlo" type="xs:string" use="required"/>
-		<xs:attribute name="exif" use="required">
-			<xs:simpleType>
-				<xs:restriction base="xs:string">
-					<xs:enumeration value="tak"/>
-					<xs:enumeration value="nie"/>
-				</xs:restriction>
-			</xs:simpleType>
-		</xs:attribute>
-	</xs:attributeGroup>
-
 	<xs:complexType name="fotografiaType">
 		<xs:sequence>
 			<xs:element name="autor" type="autorType" />
 			<xs:element name="opis" type="opisType" maxOccurs="unbounded"/>
-
-
 			<xs:element name="zdjecia" type="zdjeciaType"/>
 		</xs:sequence>
 	</xs:complexType>
-
-	<xs:attribute name="adres" type="xs:anyURI"/>
 
 	<xs:complexType name="linkType">
 		<xs:simpleContent>
@@ -81,12 +73,10 @@
 		</xs:simpleContent>
 	</xs:complexType>
 
-	<xs:element name="link" type="linkType"/>
-
 	<xs:complexType name="autorType">
-		<xs:sequence>
+		<xs:all>
 			<xs:element name="imie" type="imieType" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="nazwisko" type="imieType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="nazwisko" type="nazwiskoType" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="numer_indeksu" type="shortStringType" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="kierunek" type="kierunekType" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="grupa" minOccurs="1" maxOccurs="1">
@@ -97,7 +87,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-		</xs:sequence>
+		</xs:all>
 		<xs:attribute name="zyje" use="required">
 			<xs:simpleType>
 				<xs:restriction base="xs:string">
@@ -159,5 +149,23 @@
 		</xs:attribute>
 		<xs:attribute name="kategoria" type="shortStringType" use="optional"/>
 	</xs:complexType>
+
+	<xs:attributeGroup name="obrazekAttributes">
+		<xs:attribute name="zrodlo" type="xs:string" use="required"/>
+		<xs:attribute name="exif" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="tak"/>
+					<xs:enumeration value="nie"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+
+	<xs:element name="fotografia" type="fotografiaType"/>
+
+	<xs:element name="link" type="linkType"/>
+
+	<xs:attribute name="adres" type="xs:anyURI"/>
 
 </xs:schema>
