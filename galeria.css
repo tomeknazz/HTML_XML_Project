@@ -215,7 +215,7 @@ th, td {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 0.85em;
+    font-size: 0.7vw;
     text-transform: uppercase;
 }
 
@@ -292,19 +292,6 @@ a:visited, a:link {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-}
-
-@media (max-width:1200px) {
-    .card .pic .overlay .exif_table {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-        font-size: 0.8em;
-        text-transform: uppercase;
-    }
 }
 
 @media (max-width: 900px) {
@@ -394,5 +381,9 @@ a:visited, a:link {
         display: block;
         font-weight: 300;
         word-wrap: break-word;
+    }
+
+    .card .pic .overlay .exif_table {
+        font-size: 2.75vw;
     }
 }
